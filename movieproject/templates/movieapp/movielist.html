@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "movieapp/mv.css"%}">
+  </head>
+  <body  background-color="cyan" >
+    <h1>BLockbaster Movie List  of 2018</h1><hr>
+    <table>
+      <thead>
+        <th>Movie Name:</th>
+        <th>Movie Release Date:</th>
+        <th>Hero Name:</th>
+        <th>Heroine Name:</th>
+        <th>Critics Rating:</th>
+      </thead>
+      {% if movie_list %}
+      {% for m in movie_list %}
+      <tr>
+        <td>{{m.moviename}}</td>
+        <td>{{m.releasedate}}</td>
+        <td>{{m.heroname}}</td>
+        <td>{{m.heroinename}}</td>
+        <td>{{m.rating}}</td>
+      </tr>
+      {% endfor %}
+      {%else%}
+        <p> <h1>Data not Found  try after sometime .....</h1> </p>
+
+      {%endif%}
+    </table>
+
+  </body>
+</html>

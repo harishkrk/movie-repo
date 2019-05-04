@@ -1,0 +1,15 @@
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1518715303843-586e350765b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=684ef9ab76fba0f3f39cff3b8d6f7186&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .jumbotron{
+  margin-top: 250px;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: white;
+}
+.container .jumbotron a{
+  background-color: green;
+  text-decoration-style: double;
+}
